@@ -33,7 +33,7 @@
 - name: REGEDIT - LicenseServer name
   win_regedit:
     path: HKLM:\Software\Policies\Microsoft\Windows NT\Terminal Services
-    name: LicenseServer
+    name: LicenseServers
     data: '{{ rds_licening_server_name }}'
     type: string
 
