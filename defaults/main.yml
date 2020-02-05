@@ -6,4 +6,4 @@ members_of_remotedesktopuser:
 
 install_rds_licensing: true
 rds_licensing_mode: 4
-rds_licening_server_name: localhost
+rds_licensing_server_name: localhost
