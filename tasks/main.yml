@@ -17,6 +17,8 @@
     name: LicensingMode
     data: '{{ rds_licensing_mode }}'
     type: dword
+  when:
+    - rds_licensing_set_policy
 
 - name: reboot if RDS-Licensing feature requires it
   win_reboot:
@@ -40,6 +42,8 @@
     name: LicenseServers
     data: '{{ rds_licensing_server_name }}'
     type: string
+  when:
+    - rds_licensing_set_policy
 
 - name: reboot if RDSH feature requires it
   win_reboot:
